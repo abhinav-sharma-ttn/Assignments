@@ -24,9 +24,8 @@ public class Main {
         Float sum = 0F;
 
         // traversing the list
-        while(it.hasNext()) {
+        while(it.hasNext())
             sum = sum + it.next();
-        }
         System.out.println("Sum : " + sum);
     }
 }
