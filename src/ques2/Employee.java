@@ -1,6 +1,8 @@
 package ques2;
 
-public class Employee {
+import java.util.Comparator;
+
+public class Employee implements Comparable<Employee> {
     private String firstName, lastName;
     private Double age, salary;
 
@@ -46,5 +48,10 @@ public class Employee {
     }
     public String toString() {
         return (firstName + " " + lastName + ", " + age + ", " + salary);
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return this.firstName.compareTo(o.getFirstName());
     }
 }

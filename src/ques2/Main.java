@@ -20,7 +20,7 @@ public class Main {
         employeeAL.add(new Employee("Danish", "Bisht",40.0, 5000.0));
 
 
-        Collections.sort(employeeAL, new NameComparator());
+        Collections.sort(employeeAL);
         // System.out.println(employeeAL);
         int i=1;
         for(Employee emp : employeeAL) {
@@ -31,7 +31,7 @@ public class Main {
         // sort as per salary
         System.out.println("Sorting acc. to Salary : ");
         Collections.sort(employeeAL, new SalaryComparator());
-        i=0;
+        i=1;
         for(Employee emp : employeeAL) {
             System.out.println(i + ". " + emp);
             i++;
