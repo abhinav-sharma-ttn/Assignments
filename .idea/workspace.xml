@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f48de0b-5505-4ae7-97e1-15a8b03418e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java assignment 8.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_1/all_interfaces/Compare2Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_1/all_interfaces/Concat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_1/all_interfaces/Increment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_1/all_interfaces/ToUpperCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_classes/Add2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_classes/Multiply2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_classes/Subtract2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_interfaces/Adding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_interfaces/Multiplying.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_2/all_interfaces/Subtracting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_3/all_interfaces/Child1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_3/all_interfaces/Child2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_3/all_interfaces/DefaultMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_3/all_interfaces/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_4/Dummy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ques_4/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="9f48de0b-5505-4ae7-97e1-15a8b03418e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
