@@ -18,28 +18,30 @@ public class OrderServiceTest {
         assertTrue(orderService instanceof OrderService);
     }
 
-    @Test
-    public void placeOrderTest_WithPrice100() {
+    @Test(expected = RuntimeException.class)
+    public void placeOrderTest_With_1_Parameter() {
         Order order = new Order(10, "Book", 100);
-        double tax = order.getPrice() * 20 / 100;
-        order.setPriceWithTax(tax);
+        OrderService orderService = OrderService.getInstance();
 
-        assertThat(20, equalTo(20));
-        order.setCustomerNotified(true);
+        orderService.placeOrder(order);
 
+        double expected = 120;
+        //System.out.println(order.getPriceWithTax());
+        assertEquals(expected, order.getPriceWithTax(), 0.1);
         assertTrue(order.isCustomerNotified());
     }
 
     @Test
-    public void placeOrderTest_WithPrice200() {
+    public void placeOrderTest_With_2_Parameter() {
         Order order = new Order(10, "Book", 200);
-        double tax = order.getPrice() * 20 / 100;
-        order.setPriceWithTax(tax);
+        OrderService orderService = OrderService.getInstance();
 
-        assertThat(40, equalTo(40));
-        order.setCustomerNotified(true);
+        boolean expectedBoolean = orderService.placeOrder(order, "Abhinav");
+        double expected = 240;
 
+        assertEquals(expected, order.getPriceWithTax(), 0.1);
         assertTrue(order.isCustomerNotified());
+        assertTrue(expectedBoolean);
     }
 
 }

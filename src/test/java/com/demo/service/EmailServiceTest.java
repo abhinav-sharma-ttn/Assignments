@@ -3,39 +3,40 @@ package com.demo.service;
 import com.demo.domain.Order;
 import org.junit.*;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 import org.junit.runner.RunWith;
 import org.mockito.internal.matchers.Or;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static org.junit.Assert.*;
+
 @RunWith(MockitoJUnitRunner.class)
 public class EmailServiceTest {
 
+    @Test(expected = RuntimeException.class)
+    public void sendEmailTest_Exception() {
+        Order order = new Order(10, "Book", 200);
+        EmailService emailService = EmailService.getInstance();
+        emailService.sendEmail(order);
 
-    // Doubt........
-
-//    @Test(expected = RuntimeException.class)
-//    public void sendEmailTest_Exception() {
-//        Order order = new Order();
-//        order.setCustomerNotified(true);
-//
-//        assertTrue(order.isCustomerNotified());
-//    }
+        assertFalse(order.isCustomerNotified());
+    }
 
     @Test
     public void emailServiceGetInstanceTest() {
         EmailService emailService = EmailService.getInstance();
-        //emailService = null;
+
         assertNotNull(emailService);
         assertTrue(emailService instanceof EmailService);
     }
 
     @Test
     public void sendEmailTest() {
-        Order order = new Order();
-        order.setCustomerNotified(true);
-        assertTrue(EmailService.getInstance().sendEmail(new Order(), "abhinav"));
+        Order order = new Order(10, "Book", 200);
+        EmailService emailService = EmailService.getInstance();
+        boolean actual = emailService.sendEmail(order, "Abhinav");
+
+        assertTrue(order.isCustomerNotified());
+        assertTrue(actual);
     }
 
     @Before
